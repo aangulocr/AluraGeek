@@ -1,0 +1,126 @@
+
+.header-container {
+    background-color: rgba(83,0,200,1);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header-container img {
+    /* max-width: 100%;  */
+    /* display: block; */
+}
+
+
+.productos{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin: 5px auto;
+    width: 70vw;
+}
+
+section.miProductos{  
+    text-align: center;
+    width: 700px;
+    
+    /* height: 50vh; */
+    
+    .card-container{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        max-width: 1200px;
+     
+        gap: 15px;
+        .card{
+            background-color: rgba(83,0,200,1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            border: .5px solid rgb(201, 192, 192);
+            border-radius: 10px;
+            width: 196px;
+            height: 258px;
+
+            img{
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                width: 100%;
+                height: 70%;
+            }
+            .card-container--info{
+                color: rgb(255, 255, 255);
+                font-size: .75rem;
+                text-align: left;
+                margin: 5px;
+                .card-container--value{
+                    display: flex;
+                    justify-content:space-between;
+                    align-items: center;
+                }
+                img{
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+section.agregarProductos{
+    text-align:center;
+    /* border: green solid 1px; */
+    
+    fieldset{
+        border: none;
+        legend{
+            font-size: small;
+        }
+    }
+
+    .input{
+        border-radius: 10px;
+        border-color: blue ;
+        
+    }
+
+    input::placeholder {
+        color: blue;
+        font-size: .75rem;
+        
+      }
+
+    .boton{
+        border-color: blue;
+        border-radius: 5px;
+        background-color: white;
+        color: blue;
+        cursor: pointer;
+    }
+    
+    .btn-enviar{
+        background-color: blue;
+        color: white;
+    }
+
+    .boton:hover{
+        opacity: 0.6;
+    }
+
+}
+
+footer{
+    
+    background-color: rgba(83,0,200,1);
+    display:block;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233, 221, 221);
+    font-size: .5rem;
+}
+
+
